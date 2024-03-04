@@ -1,4 +1,4 @@
-package com.example.examenspboot;
+package com.example.examenspboot.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -13,9 +13,9 @@ public class Cliente {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String nombreCliente;
+    private String nombre;
 
-    private Long totalVentas;
+    private Long total;
 
     private String estado;
 
@@ -23,9 +23,4 @@ public class Cliente {
     public Cliente() {
     }
 
-    public Cliente(String nombreCliente, Long totalVentas, String estado) {
-        this.nombreCliente = nombreCliente;
-        this.totalVentas = totalVentas;
-        this.estado = estado;
-    }
 }
